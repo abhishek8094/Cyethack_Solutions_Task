@@ -93,6 +93,6 @@
 
 
  6. ## License
-   Specify the license under which your project is distributed.
+     Specify the license under which your project is distributed.
 
 
