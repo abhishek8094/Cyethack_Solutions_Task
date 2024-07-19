@@ -92,7 +92,7 @@ For testing purposes, the default username and password to access the applicatio
        Password: admin
 
 
-  ## License
+ 6. ## License
    Specify the license under which your project is distributed.
 
 
