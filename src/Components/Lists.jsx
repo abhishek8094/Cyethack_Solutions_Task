@@ -7,7 +7,6 @@ import TableComponent from "./TableComponent";
 
 const Lists = () => {
   const students = useSelector((state) =>state.auth.students);
-  console.log(students)
  
   const navigate = useNavigate();
 

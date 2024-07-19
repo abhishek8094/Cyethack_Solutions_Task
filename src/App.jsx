@@ -14,11 +14,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <Dashboard />,
+    element: <PrivateRoute><Dashboard /></PrivateRoute>,
   },
   {
     path: "/list",
-    element: <List />,
+    element:<List />,
   },
   {
     path: "/list/details",

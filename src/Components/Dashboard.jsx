@@ -45,7 +45,8 @@ const Dashboard = () => {
             size="large"
             style={buttonStyles}
             onClick={() => {
-              navigate("/list");
+              console.log("hi")
+              navigate("/list")
             }}
             endIcon={<ArrowForwardIcon />}
           >

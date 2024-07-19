@@ -10,7 +10,7 @@ const Dashboard = React.lazy(() => import("../Components/Dashboard"));
 
 const Home = () => {
   const dispatch = useDispatch();
-  const { isLoggedIn } = useSelector((state) => state.auth);
+  const { isLoggedIn } = useSelector((state) => state.student);
   
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');

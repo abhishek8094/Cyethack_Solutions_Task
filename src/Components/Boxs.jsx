@@ -1,45 +1,48 @@
-/** @jsx jsx */
-import { css, jsx } from '@emotion/react';
-import { Card, Typography } from '@mui/material';
+/** @jsxImportSource @emotion/react */
+import { Card, Typography, Box } from '@mui/material';
 
 const Boxs = ({ data }) => {
-  const boxContainerStyles = css`
-    display: flex;
-    margin: 15px;
-    gap: 20px;
-  `;
+  
+  const boxContainerStyles = {
+    display: 'flex',
+    margin: '15px',
+    gap: '20px',
+  };
 
-  const boxStyles = css`
-    width: 25%;
-    text-align: center;
-  `;
+  const boxStyles = {
+    width: '25%',
+    textAlign: 'center',
+    overflow: 'hidden',
+  };
 
-  const cardStyles = (color) => css`
-    width: 100%;
-    border: 1px solid;
-    text-align: center;
-    background-color: ${color};
-    border-radius: 0;
-    font-size: 30px;
-    color: white;
-    padding: 20px; /* Add padding for better spacing inside the card */
-  `;
+  const cardStyles = (color) => ({
+    width: '100%',
+    border: '1px solid',
+    textAlign: 'center',
+    backgroundColor: color,
+    borderRadius: 0,
+    fontSize: '30px',
+    color: 'white',
+    padding: '20px', 
+    overflow: 'hidden', 
+  });
 
-  const titleStyles = css`
-    border: 1px solid;
-    font-size: 20px !important;
-    margin-top: 10px; /* Add margin-top for better spacing below the card */
-  `;
+  const titleStyles = {
+    border: '1px solid',
+    fontSize: '20px',
+    marginTop: '10px', 
+    overflow: 'hidden',
+  };
 
   return (
-    <div css={boxContainerStyles}>
-      {data.map((ele, idx) => (
-        <div key={idx} css={boxStyles}>
-          <Card css={cardStyles(ele.color)}>{ele.value}</Card>
-          <Typography variant="h6" css={titleStyles}>{ele.label}</Typography>
-        </div>
+    <Box sx={boxContainerStyles}>
+      {data.map((element, idx) => (
+        <Box key={idx} sx={boxStyles}>
+          <Card sx={cardStyles(element.color)}>{element.value}</Card>
+          <Typography variant="h6" sx={titleStyles}>{element.label}</Typography>
+        </Box>
       ))}
-    </div>
+    </Box>
   );
 };
 

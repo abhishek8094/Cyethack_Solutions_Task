@@ -67,6 +67,7 @@ const ListDetail = () => {
       width: 100%;
       height: 100%;
     `,
+
     loadingContainer: css`
       width: 100%;
       height: 100%;
@@ -74,6 +75,7 @@ const ListDetail = () => {
       justify-content: center;
       align-items: center;
     `,
+
     riskScoreContainer: css`
       background-color: #fbbf24;
       font-weight: bold;
@@ -95,7 +97,7 @@ const ListDetail = () => {
           <CircularProgress />
         </div>
       ) : userData ? (
-        <div>
+        <div >
           <NavBar />
           <Boxs
             data={[

@@ -16,15 +16,14 @@ const LoginPage = ({ onFinish, onFinishFailed }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
+    const data = new FormData(event.currentTarget)
     const values = {
       username: data.get('username'),
       password: data.get('password'),
     };
-
-    console.log(values)
     if (values.username && values.password) {
       onFinish(values);
+
     } else {
       onFinishFailed({ errorFields: [{ name: 'username', errors: ['Please input your username!'] }, { name: 'password', errors: ['Please input your password!'] }] });
     }
