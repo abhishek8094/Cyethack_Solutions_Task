@@ -76,14 +76,14 @@
      ```sh
      npm start
 
-The application will run in development mode at http://localhost:5173.
+   The application will run in development mode at http://localhost:5173.
 
-4. **Build for production:**
-    ```sh
+  4. **Build for production:**
+     ```sh
     npm run build
        
 4. ## Default Credentials
-For testing purposes, the default username and password to access the application are both set to "admin".
+   For testing purposes, the default username and password to access the application are both set to "admin".
 
 5. ## Usage
     When logging in during development or testing:
