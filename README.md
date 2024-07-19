@@ -12,7 +12,6 @@
 3. [Setup Instructions](#setup-instructions)
 4. [Default Credentials](#default-credentials)
 5. [Usage](#usage)
-6. [Additional Notes](#additional-notes)
 7. [License](#license)
 
  ## Technologies Used
@@ -26,55 +25,54 @@
 
 
 ## Folder Structure
-The project follows a structured organization to maintain scalability and clarity:
+   The project follows a structured organization to maintain scalability and clarity:
     ```sh
-         src
-├── components # Reusable UI components
-│ ├── Boxs.jsx # Component for displaying box elements
-│ ├── Dashboard.jsx # Main dashboard component
-│ ├── Header.jsx # Header component with navigation and user actions
-│ ├── ListDetail.jsx # Detailed view component for list items
-│ ├── Lists.jsx # Component for displaying a list of items
-│ ├── NavBar.jsx # Navigation bar component
-│ ├── SearchBar.jsx # Search bar component
-│ ├── TableComponent.jsx # Component for displaying data in a table format
-│ ├── UserData.jsx # Component for displaying user data and charts
-│ └── withHeader.jsx # HOC for adding a header to components
-├── constants # Constants used across the application
-│ └── Vulnerabilities.js # List of vulnerabilities and their details
-├── pages # Page components used by React Router
-│ ├── HomePage
-│ │ └── Home.jsx # Home page component
-│ ├── ListPage
-│ │ └── List.jsx # Page component displaying a list of items
-│ └── ListDetailsPage
-│ └── ListDetails.jsx # Page component displaying detailed information about an item
-├── store # Redux store setup and slices
-│ ├── slices
-│ │ ├── authSlice.js # Redux slice for authentication state management
-│ │ └── studentSlice.js # Redux slice for student-related state management
-├── styles # Global styles or CSS files
-│ └── index.css
-├── App.js # Root component defining application routes
-├── index.js # Entry point of the application
-└── reportWebVitals.js # Utility for measuring web vitals
+    
+          src
+           ├── components # Reusable UI components
+           │ ├── Boxs.jsx # Component for displaying box elements
+           │ ├── Dashboard.jsx # Main dashboard component
+           │ ├── Header.jsx # Header component with navigation and user actions
+           │ ├── ListDetail.jsx # Detailed view component for list items
+           │ ├── Lists.jsx # Component for displaying a list of items
+           │ ├── NavBar.jsx # Navigation bar component
+           │ ├── SearchBar.jsx # Search bar component
+           │ ├── TableComponent.jsx # Component for displaying data in a table format
+           │ ├── UserData.jsx # Component for displaying user data and charts
+           │ └── withHeader.jsx # HOC for adding a header to components
+           ├── constants # Constants used across the application
+           │ └── Vulnerabilities.js # List of vulnerabilities and their details
+           ├── pages # Page components used by React Router
+           │ ├── HomePage
+           │ │ └── Home.jsx # Home page component
+           │ ├── ListPage
+           │ │ └── List.jsx # Page component displaying a list of items
+           │ └── ListDetailsPage
+           │ └── ListDetails.jsx # Page component displaying detailed information about an item
+           ├── store # Redux store setup and slices
+           │ ├── slices
+           │ ├── authSlice.js # Redux slice for authentication state management
+           │ │ └── studentSlice.js # Redux slice for student-related state management      
+           ├── styles # Global styles or CSS files
+           │ └── index.css
+           ├── App.js # Root component defining application routes
+           ├── index.js # Entry point of the application
+           └── reportWebVitals.js # Utility for measuring web vitals
 
 
-
-
-3.## Setup Instructions
-To set up and run the Cyethack application locally, follow these steps:
-Clone the repository:
-1. **Clone the repository:**
+3. ## Setup Instructions
+   To set up and run the Cyethack application locally, follow these steps:
+    Clone the repository:
+   1. **Clone the repository:**
    ```sh
    git clone https://github.com/your-username/cyethack.git
 
-2. **Install dependencies:**
-   ```sh
-    npm install
-    Run the application:
+  2. **Install dependencies:**
+      ```sh
+       npm install
+       Run the application:
    
-3. **Run the development server**
+  3. **Run the development server**
      ```sh
      npm start
 
@@ -95,6 +93,6 @@ For testing purposes, the default username and password to access the applicatio
 
 
   ## License
-Specify the license under which your project is distributed.
+   Specify the license under which your project is distributed.
 
 
