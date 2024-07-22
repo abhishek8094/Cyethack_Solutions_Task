@@ -1,6 +1,7 @@
 import React from 'react';
 import { RouterProvider } from 'react-router-dom';
 import { createBrowserRouter } from 'react-router-dom';
+import PublicRoute from "./Routes/PublicRoute"
 import PrivateRoute from "./Routes/PrivateRoute";
 import Home from "./pages/Home"
 import Dashboard from "./Components/Dashboard";
@@ -10,11 +11,11 @@ import ListDetails from "./pages/ListDetails"
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element:<PublicRoute element={<Home />} />
   },
   {
     path: "/dashboard",
-    element: <PrivateRoute><Dashboard /></PrivateRoute>,
+    element: <PrivateRoute element={<Dashboard />}/>,
   },
   {
     path: "/list",
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/list/details",
-    element: <ListDetails />,
+    element: <ListDetails/>,
   }
 ]);
 
