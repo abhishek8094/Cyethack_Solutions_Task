@@ -5,42 +5,49 @@ export const Vulnerabilities = [
         value: "271",
         color: "yellow",
     },
+
     {
         type: "high",
         content: "Content Security Policy (CSP) Header Not Set",
         value: "271",
         color: "red",
     },
+
     {
         type: "high_2",
         content: "Missing Anti-clickjacking Header",
         value: "271",
         color: "red",
     },
+
     {
         type: "low",
         content: "Information Disclosure-Suspicious Comments",
         value: "271",
         color: "green",
     },
+
     {
         type: "low_2",
         content: "User Agent Fuzzer",
         value: "271",
         color: "green",
     },
+
     {
         type: "low_3",
         content: "Information Disclosure-Suspicious Comments",
         value: "271",
         color: "green",
     },
+
     {
         type: "low_4",
         content: "Information Disclosure-Suspicious Comments",
         value: "271",
         color: "green",
     },
+
     {
         type: "low_5",
         content: "Information Disclosure-Suspicious Comments",
@@ -130,6 +137,7 @@ export const students = [
             low: 89
         },
     },
+
     {
         item_id: 6,
         scanName: "BWAPP recon scan",
@@ -146,6 +154,7 @@ export const students = [
             low: 20
         },
     },
+    
     {
         item_id: 7,
         scanName: "BWAPP recon scan",
@@ -162,6 +171,7 @@ export const students = [
             low: 50
         },
     },
+
     {
         item_id: 8,
         scanName: "BWAPP recon scan",
