@@ -15,7 +15,7 @@ const authSlice = createSlice({
     logout(state) {
       state.isLoggedIn = false;
       document.cookie =
-        "isLoggedIn=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/"; // Clear the cookie
+        "isLoggedIn = ; expires = Thu, 01 Jan 1970 00:00:00 GMT; path=/"; // Clear the cookie
     },
   },
 });
