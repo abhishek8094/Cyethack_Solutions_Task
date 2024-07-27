@@ -3,7 +3,6 @@ import { Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const PublicRoute = ({ element }) => {
-  console.log(element)
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   return isLoggedIn ? <Navigate to="/dashboard" /> : element;
 };
